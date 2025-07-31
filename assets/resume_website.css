@@ -1,0 +1,409 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #bfae99;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+/* Green glass effect for main content cards */
+.projects-grid .project-card,
+.bottom-section > .card,
+.tools-grid,
+.experience-item,
+.card.section-projects,
+.card.section-education,
+.card.section-tools,
+.card.section-experience {
+    background: rgba(60, 180, 120, 0.18) !important;
+    box-shadow: 0 8px 32px rgba(60, 180, 120, 0.10);
+    transition: background 0.3s, box-shadow 0.3s;
+}
+.projects-grid .project-card:hover,
+.bottom-section > .card:hover,
+.tools-grid:hover,
+.experience-item:hover,
+.card.section-projects:hover,
+.card.section-education:hover,
+.card.section-tools:hover,
+.card.section-experience:hover {
+    background: rgba(30, 120, 80, 0.32) !important;
+    box-shadow: 0 12px 36px rgba(30, 120, 80, 0.18);
+}
+
+/* Header Section */
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120"><rect width="120" height="120" fill="%23D4B895"/></svg>');
+    background-size: cover;
+}
+
+.header-content h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.header-content p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+/* Two Column Layout */
+.two-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.section-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Proficiency Section */
+.proficiency-levels {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    font-size: 12px;
+    color: #666;
+}
+
+.skill-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.skill-name {
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.progress-bar {
+    width: 120px;
+    height: 8px;
+    background: #ecf0f1;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: #4A9B8E;
+    border-radius: 4px;
+}
+
+.progress-90 { width: 90%; }
+.progress-75 { width: 75%; }
+.progress-40 { width: 40%; }
+.progress-60 { width: 60%; }
+
+/* Skills Section */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.skill-tag {
+    background: #ecf0f1;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #2c3e50;
+    text-align: center;
+}
+
+/* Projects Section */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.project-card {
+    background: #4A9B8E;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    position: relative;
+    min-height: 200px;
+}
+
+.project-card.orange { background: #D2691E; }
+.project-card.red { background: #CD5C5C; }
+.project-card.blue { background: #4682B4; }
+
+.project-year {
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.project-title {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.project-brief {
+    font-size: 10px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.project-description {
+    font-size: 9px;
+    line-height: 1.3;
+    margin-bottom: 8px;
+}
+
+.project-tech {
+    font-size: 8px;
+    font-weight: 600;
+}
+
+.heart-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 16px;
+}
+
+/* Bottom Two Column Layout */
+.bottom-section {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 20px;
+}
+
+/* Education Section */
+.education-item {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.education-date {
+    background: #4A9B8E;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 10px;
+    font-weight: 600;
+    min-width: 120px;
+    text-align: center;
+}
+
+.education-content h4 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.education-content .degree {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.education-content ul {
+    list-style: none;
+    font-size: 11px;
+    color: #666;
+    line-height: 1.4;
+}
+
+.education-content ul li::before {
+    content: "• ";
+    color: #4A9B8E;
+    font-weight: bold;
+}
+
+/* Tools Section */
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.tool-category {
+    text-align: center;
+}
+
+.tool-label {
+    background: #2c3e50;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.tool-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+}
+
+.tool-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.tool-icon.js { background: #f7df1e; color: #000; }
+.tool-icon.css { background: #1572b6; color: white; }
+.tool-icon.html { background: #e34f26; color: white; }
+.tool-icon.react { background: #61dafb; color: #000; }
+.tool-icon.node { background: #339933; color: white; }
+.tool-icon.figma { background: #f24e1e; color: white; }
+.tool-icon.ps { background: #31a8ff; color: white; }
+.tool-icon.ai { background: #ff9a00; color: white; }
+.tool-icon.vscode { background: #007acc; color: white; }
+.tool-icon.git { background: #f05032; color: white; }
+.tool-icon.github { background: #333; color: white; }
+.tool-icon.npm { background: #cb3837; color: white; }
+.tool-icon.slack { background: #4a154b; color: white; }
+.tool-icon.pdf { background: #dc2626; color: white; }
+.tool-icon.gdrive { background: #4285f4; color: white; }
+
+/* Experience Section */
+.experience-item {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.experience-date {
+    background: #4A9B8E;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 10px;
+    font-weight: 600;
+    min-width: 120px;
+    text-align: center;
+    height: fit-content;
+}
+
+.experience-date.current {
+    background: #CD5C5C;
+}
+
+.experience-content h4 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.experience-content .company {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.experience-content ul {
+    list-style: none;
+    font-size: 11px;
+    color: #666;
+    line-height: 1.4;
+}
+
+.experience-content ul li::before {
+    content: "• ";
+    color: #4A9B8E;
+    font-weight: bold;
+}
+
+/* Footer */
+.footer {
+    background: #E67E22;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.footer h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    font-size: 12px;
+    opacity: 0.9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    .two-column,
+    .bottom-section {
+        grid-template-columns: 1fr;
+    }
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .header {
+        flex-direction: column;
+        text-align: center;
+        gap: 16px;
+    }
+    .profile-img {
+        margin-bottom: 10px;
+    }
+    .tools-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
