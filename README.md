@@ -24,7 +24,7 @@ A modern, responsive, and visually engaging portfolio and resume website for Nts
 ## 📂 Project Structure
 
 ```
-Devfolio2/
+resume-portfolio/
 ├── assets/
 │   ├── resume_website.css   # Main stylesheet
 │   └── resume_website.js    # Interactive JavaScript
@@ -33,7 +33,12 @@ Devfolio2/
 ```
 
 ## 📸 Live Preview
-Open `resume_website.html` in your browser to view the site locally.
+
+To view the site locally:
+
+- To update your profile image, either edit the `.profile-img` selector in `assets/resume_website.css` to change the image URL, or replace the SVG/image file referenced in the HTML.
+2. Navigate to the project folder.
+3. Open `resume_website.html` in your web browser.
 
 ## 📝 Customization
 - Update your profile image by editing the `.profile-img` CSS or replacing the SVG.
