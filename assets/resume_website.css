@@ -414,3 +414,69 @@ body {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+/* Proficiency section improvements */
+.proficiency-card {
+    padding: 18px 18px 14px 18px;
+}
+.proficiency-levels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.95em;
+    opacity: 0.85;
+    margin-bottom: 8px;
+}
+.proficiency-skills-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.skill-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 0;
+    padding: 2px 0;
+}
+.skill-name {
+    flex: 1 1 120px;
+    min-width: 0;
+    font-size: 1em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.progress-bar {
+    flex: 2 1 120px;
+    height: 9px;
+    background: #e3e3e3;
+    border-radius: 5px;
+    margin-left: 10px;
+    min-width: 80px;
+    max-width: 280px;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0 0 1px #ccc;
+}
+.progress-fill {
+    height: 100%;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #79e081 60%, #207c5a 100%);
+    transition: width 0.7s cubic-bezier(0.4,0,0.2,1);
+}
+.progress-90 { width: 90%; }
+.progress-75 { width: 75%; }
+@media (max-width: 700px) {
+    .proficiency-card {
+        padding: 12px 6px 10px 6px;
+    }
+    .skill-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2px;
+    }
+    .skill-name, .progress-bar {
+        width: 100%;
+        max-width: 100%;
+    }
+}
