@@ -55,6 +55,14 @@ To view the site locally:
 - Designed and developed by Ntsika Ngilane
 - Inspired by modern portfolio and resume best practices
 
+## 🎥 Video Links
+
+Here are walkthrough videos of the portfolio in action:
+
+- [📹 Portfolio Overview Video 1](https://www.loom.com/share/32a9ed204d074162a26c858e9da62ab1?sid=751a2789-6feb-4b69-b0a4-fb769e007260)
+- [📹 Portfolio Overview Video 2](https://www.loom.com/share/1be9bdaa09b44fe1813b82561a62b8d8?sid=7bf5fefb-26bc-4adc-994a-5811cc88023a)
+- [📹 Portfolio Overview Video 3](https://www.loom.com/share/56b3b1dce74b4a1db8b593cf1d247b84?sid=915d7cb6-69e6-4a29-95af-35fe05338a2f)
+
 ---
 
 Feel free to fork, customize, and use this template for your own professional portfolio!
